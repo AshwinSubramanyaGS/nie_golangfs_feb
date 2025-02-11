@@ -4,7 +4,7 @@ function CarView() {
     return (
         <>
             <PageHeader />
-            <h3><a href="cars_list.html" className="btn btn-light">Go Back</a>View Car</h3>
+            <h3><a href="/" className="btn btn-light">Go Back</a>View Car</h3>
             <div className="container">
                 <div className="form-group mb-3">
                     <label htmlFor="number" className="form-label">Car Number:</label>
