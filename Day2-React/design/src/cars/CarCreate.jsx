@@ -4,7 +4,7 @@ export default function CarCreate() {
     return (
         <>
             <PageHeader />
-            <h3> <a href="cars_list.html" className="btn btn-light">Go Back</a>Add Car</h3>
+            <h3> <a href="/" className="btn btn-light">Go Back</a>Add Car</h3>
             <div className="container">
 
                 <div className="form-group mb-3">
