@@ -23,8 +23,6 @@ type Car struct {
 	Type   string
 }
 
-// Connect to MongoDB
-
 // POST /cars
 func createCar(c *gin.Context) {
 	var jbodyCar Car
@@ -35,7 +33,7 @@ func createCar(c *gin.Context) {
 		return
 	}
 
-	var createdCar Car = Car{ID: "id001", Number: "KA03 A1010", Model: "Maruti Suzuki", Type: "CUV"}
+	var createdCar Car = Car{ID: jbodyCar.ID, Number: jbodyCar.Number, Model: jbodyCar.Model, Type: jbodyCar.Type}
 
 	// Return created car
 	c.JSON(http.StatusCreated, gin.H{
@@ -90,9 +88,6 @@ func deleteCar(c *gin.Context) {
 }
 
 func main() {
-	// Connect to MongoDB
-	//connectDB()
-
 	// Set up Gin router
 	r := gin.Default()
 	// CORS Configuration
