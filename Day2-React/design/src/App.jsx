@@ -12,6 +12,8 @@ function App() {
             <Route path="/car/list" element={<CarList/>}/>
             <Route path="/car/create" element={<CarCreate/>}/>
             <Route path="/car/view" element={<CarView/>}/>
+            <Route path="car/car/view" element={<CarView/>}/>
+            <Route path="car/car/create" element={<CarCreate/>}/>
         </Routes>
       
       </BrowserRouter>
