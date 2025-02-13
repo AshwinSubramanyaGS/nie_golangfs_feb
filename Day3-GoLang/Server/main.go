@@ -5,9 +5,8 @@ import (
 	"fmt"
 	//"log"
 	"net/http"
-	"time"
 
-	"github.com/gin-contrib/cors"
+	//"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -67,11 +66,7 @@ func updateCar(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	var oldCar Car = Car{ID: id, Number: "KA03 A1010", Model: "Maruti Suzuki", Type: "CUV"}
-
-	oldCar.Number = jbodyCar.Number
-	oldCar.Model = jbodyCar.Model
-	oldCar.Type = jbodyCar.Type
+	var oldCar Car = Car{ID: id, Number: jbodyCar.Number, Model: jbodyCar.Model, Type: jbodyCar.Type}
 
 	// Return updated car
 	c.JSON(http.StatusOK, gin.H{
@@ -91,14 +86,14 @@ func main() {
 	// Set up Gin router
 	r := gin.Default()
 	// CORS Configuration
-	r.Use(cors.New(cors.Config{
+	/*r.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:5173"}, // React frontend URL
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
 		MaxAge:           12 * time.Hour,
-	}))
+	}))*/
 
 	// Routes
 	r.POST("/cars", createCar)
