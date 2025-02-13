@@ -1,0 +1,13 @@
+to initialize module main:
+$ go mod init main
+to install dependencies:
+$ go get github.com/gin-gonic/gin
+$ go get go.mongodb.org/mongo-driver/bson
+$ go get go.mongodb.org/mongo-driver/bson/primitive
+$ go get go.mongodb.org/mongo-driver/mongo
+$ go get go.mongodb.org/mongo-driver/mongo/options
+$ go get golang.org/x/crypto/sha3@v0.26.0
+to run:
+$ go run main.go 
+Authorize firewall if asked permissions to allow
+
