@@ -1,0 +1,8 @@
+To be as vite project folder: 
+    (folder existing.)
+
+    PS C:\mywork\source\nie2402_10_14\ars\02app_client\client> npm create vite@latest . -- --template react
+To install the react, react-dom  
+    PS C:\mywork\source\nie2402_10_14\ars\02app_client\client> npm install 
+To use the router for navigation of FlightList, FlightEdit, FlightCreation component
+    PS C:\mywork\source\nie2402_10_14\ars\02app_client\client> npm install react-router-dom
