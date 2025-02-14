@@ -25,7 +25,7 @@ function CarCreate() {
     
     return(
         <>
-            <PageHeader/>            
+            <PageHeader PageNumber={2}/>            
             <h3><a href="/cars/list" className="btn btn-light">Go Back</a>Add Car</h3>
             <div className="container">
                 <div className="form-group mb-3">
