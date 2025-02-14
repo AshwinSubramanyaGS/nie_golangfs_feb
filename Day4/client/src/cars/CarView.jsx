@@ -20,7 +20,7 @@ function CarView() {
     },[]);
     return(
         <>
-            <PageHeader/>
+            <PageHeader PageNumber={2}/>
             
             <h3><a href="/cars/list" className="btn btn-light">Go Back</a>View Car</h3>
             <div className="container">

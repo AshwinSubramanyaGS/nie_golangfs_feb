@@ -34,7 +34,7 @@ function CarList() {
     },[]);
     return (
         <>
-            <PageHeader />
+            <PageHeader PageNumber={1} />
             <h3>List of Cars</h3>
             <div className="container">
                 <table className="table table-success table-striped">

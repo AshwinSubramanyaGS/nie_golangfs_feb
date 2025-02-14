@@ -38,7 +38,7 @@ function CarEdit() {
     },[]);
     return(
         <>
-            <PageHeader/>
+            <PageHeader PageNumber={3}/>
             
             <h3><a href="/cars/list" className="btn btn-light">Go Back</a>Edit Car</h3>
             <div className="container">
